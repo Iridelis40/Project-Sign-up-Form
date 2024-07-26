@@ -2,6 +2,10 @@
     font-family: Norse-bold;
     src: url(font/Norse-Bold.otf);
 }
+:root {
+    font-family: Roboto;
+    color: rgba(0, 0, 0, 0.795);
+}
 
 body {
     height: 100vh;
@@ -21,7 +25,9 @@ body {
 #mainContent {
     flex-grow: 1;
     height: 100vh;
-    background-color: yellow;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 }
 .tag {
     width: 100%;
@@ -40,4 +46,83 @@ body {
     color: white;
     font-family: Norse-bold;
     font-size: 5rem;
+}
+
+#description {
+    height: 33%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-bottom: 5%; 
+}
+#motivational {
+    width: 70%;
+    text-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+#container {
+height: 33%;
+padding-left: 5%;
+border: solid;
+border-width: 1px;
+border-color: rgb(0, 0, 0, 0.1);
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+color: rgb(146, 141, 141);
+}
+#container p {
+    font-size: 1.5rem;  
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+input {
+    width: 70%;
+    height: 100%;
+    border: solid;
+    border-radius: 0.2rem;
+    border-width: 1px;
+    border-color: rgb(169, 169, 169, 0.3);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#password:invalid {
+    border-color: red;
+}
+input:valid {
+    border-color: greenyellow;
+}
+
+#footer {
+    flex-grow: 1;
+    padding-left: 5%;
+    height: 33%;
+}
+#submitBtn {
+    margin-top: 2rem;
+    color: white;
+    background-color: rgba(13, 87, 13, 0.664);
+    font-weight: 600;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+}
+#submitBtn:hover {
+    box-shadow: rgb(0, 0, 0, 0.3) 3px 3px;
+    transition: 200ms;
+}
+#submitBtn:active {
+    box-shadow: rgb(0, 0, 0) 0px 0px;
+    translate: 3px 3px;
+    transition: 100ms;
 }
